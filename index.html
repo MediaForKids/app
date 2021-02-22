@@ -50,6 +50,17 @@ s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
+		
+<script src="https://downloads.minepi.com/sdk/v1/prod.js">
+		
+const PiNetworkClient = window.PiNetwork;
+try {
+  const user = await PiNetworkClient.Authenticate()
+  console.log(`Hello ${user.username}`)
+} catch (err) {
+  // Not able to fetch the user
+}
+</script>
 <!--End of Tawk.to Script-->
 		
 		
