@@ -2,9 +2,9 @@
 		
 const PiNetworkClient = window.PiNetwork;
 try {
-  const user = await PiNetworkClient.Authenticate()
-  console.log(`Hello ${user.username}`)
+  const user = await PiNetworkClient.Authenticate();
+  alert("Hello ${user.username}");
 } catch (err) {
-  // Not able to fetch the user
+  alert("Not able to fetch the user");
 }
 </script>
